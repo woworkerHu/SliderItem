@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@null"
+    android:gravity="center_vertical">
+
+    <LinearLayout
+        android:layout_width="200dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:gravity="right">
+
+        <ImageButton
+            android:id="@+id/ib_invoice_card_item_edit"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:layout_marginRight="15dp"
+            android:background="@null"
+            android:scaleType="centerCrop"
+            android:src="@drawable/edit" />
+
+        <ImageButton
+            android:id="@+id/ib_invoice_card_item_delete"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:layout_marginRight="15dp"
+            android:background="@null"
+            android:scaleType="centerCrop"
+            android:src="@drawable/delete" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_invoice_card_item_body"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/white_bg_4_corner"
+        android:clickable="true">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/iv_invoice_card_image"
+                android:background="@drawable/profile" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="7"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:lines="1"
+                android:id="@+id/tv_invoice_card_item_name"
+                android:text="用友网络科技有限公司"
+                android:textColor="#000"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:id="@+id/tv_invoice_card_item_tax_number"
+                android:gravity="center_vertical"
+                android:lines="1"
+                android:text="00000000000000"
+                android:textColor="#909ea6"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="10dp"
+                android:layout_height="30dp"
+                android:src="@drawable/right_arrow_grey" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

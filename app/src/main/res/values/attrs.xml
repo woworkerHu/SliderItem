@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="InvoiceCardItem">
+        <attr name="invoice_card_item_enable_slide" format="boolean"/>
+    </declare-styleable>
+</resources>
